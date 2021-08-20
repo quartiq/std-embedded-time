@@ -4,6 +4,8 @@ authors = ["Ryan Summers <ryan.summers@vertigo-designs.com"]
 version = "0.1.0"
 edition = "2018"
 categories = ["embedded", "date-and-time", "development-tools"]
+keywords = ["embedded", "date", "time", "test", "embedded-time"]
+
 repository = "https://github.com/quartiq/std-embedded-time"
 readme = "README.md"
 documentation = "https://docs.rs/std-embedded-time"
