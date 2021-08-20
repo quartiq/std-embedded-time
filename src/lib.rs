@@ -1,8 +1,22 @@
-//! # Standrd `embedded-time`
+//! # Standard `embedded-time`
 //!
 //! This library provides an [embedded_time::Clock] that can be used for host-side testing.
 //!
 //! The provided [embedded_time::Clock] implementation is based on [std::time].
+//!
+//! # Usage
+//!
+//! ```rust
+//! use std_embedded_time::StandardClock;
+//! use embedded_time::Clock;
+//!
+//! fn main() {
+//!     let clock = StandardClock::default();
+//!
+//!     let now = clock.try_now().unwrap();
+//!     println!("Current time: {:?}", now);
+//! }
+//! ```
 
 pub use embedded_time;
 
@@ -10,7 +24,7 @@ use embedded_time::{fraction::Fraction, Instant};
 
 /// A clock with nanosecond precision.
 ///
-/// To construct a clock, use [Clock::default()].
+/// To construct a clock, use [StandardClock::default()].
 ///
 /// The clock is "started" when it is constructed.
 ///
