@@ -5,6 +5,8 @@ version = "0.1.0"
 edition = "2018"
 categories = ["embedded", "date-and-time", "development-tools"]
 keywords = ["embedded", "date", "time", "test", "embedded-time"]
+license-file = "LICENSE"
+description = "Implementation of embedded-time Clocks using std::time"
 
 repository = "https://github.com/quartiq/std-embedded-time"
 readme = "README.md"
